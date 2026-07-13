@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USDT Token Sender</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.0/dist/ethers.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>USDT Token Sender</h1>
+      <p>Connect your wallet as the owner and send USDT to any recipient address.</p>
+
+      <div class="card">
+        <button id="connectBtn">Connect Wallet</button>
+        <div class="status-row">
+          <span class="label">Connected account:</span>
+          <span id="accountLabel">Not connected</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Network:</span>
+          <span id="networkLabel">Not connected</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Owner check:</span>
+          <span id="ownerLabel">Waiting for contract address</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <label for="contractAddress">Token Contract Address</label>
+        <input id="contractAddress" type="text" placeholder="0x..." />
+
+        <label for="recipientAddress">Recipient Wallet Address</label>
+        <input id="recipientAddress" type="text" placeholder="0x..." />
+
+        <label for="amount">Amount</label>
+        <input id="amount" type="text" placeholder="100" />
+
+        <button id="sendBtn">Send Tokens</button>
+      </div>
+
+      <div id="messageBox" class="message-box">Ready to send.</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

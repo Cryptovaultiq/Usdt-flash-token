@@ -1,0 +1,15 @@
+{
+  "name": "Usdt-token",
+  "symbol": "USDT",
+  "decimals": 18,
+  "image": "https://raw.githubusercontent.com/Cryptovaultiq/ShowThem-BTC-token/main/frontend/public/BTC.png",
+  "description": "Tether USD Token (USDT) is a stablecoin that aims to maintain a 1:1 peg with the US Dollar. It is widely used in the cryptocurrency ecosystem for trading, remittances, and as a store of value.",
+  "price": "1.00",
+  "external_link": "https://github.com/yourusername",
+  "properties": {
+    "contract_address": "YOUR_CONTRACT_ADDRESS_HERE",
+    "network": "Ethereum Mainnet",
+    "chain_id": 1,
+    "token_type": "ERC-20"
+  }
+}
