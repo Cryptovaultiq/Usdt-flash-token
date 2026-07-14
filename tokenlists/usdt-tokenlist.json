@@ -1,0 +1,22 @@
+{
+  "name": "Cryptovaultiq Token List",
+  "timestamp": "2026-07-14T00:00:00+00:00",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "logoURI": "https://raw.githubusercontent.com/Cryptovaultiq/Usdt-flash-token/main/frontend/public/USDT.png",
+  "keywords": ["usdt", "tether", "stablecoin"],
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x6013b5f1b078177195e3ED8e5ED50bAa47fc20Cf",
+      "name": "Usdt-token",
+      "symbol": "USDT",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Cryptovaultiq/Usdt-flash-token/main/frontend/public/USDT.png",
+      "tags": ["stablecoin"],
+      "extensions": {
+        "coingeckoId": null,
+        "serumV3Usdc": null
+      }
+    }
+  ]
+}
