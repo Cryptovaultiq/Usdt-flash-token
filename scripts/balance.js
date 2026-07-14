@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const contractAddress = "YOUR_DEPLOYED_CONTRACT_ADDRESS_HERE";
+  const contractAddress = "0x6013b5f1b078177195e3ED8e5ED50bAa47fc20Cf";
   const UsdtToken = await hre.ethers.getContractAt("UsdtToken", contractAddress);
   const [signer] = await hre.ethers.getSigners();
   

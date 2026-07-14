@@ -14,7 +14,7 @@ contract UsdtToken is ERC20, Ownable {
     string public constant metadataDescription = "USDT Token";
 
     constructor() ERC20(metadataName, metadataSymbol) Ownable(msg.sender) {
-        _mint(msg.sender, 1000000 * 10 ** decimals()); // 1,000,000 USDT
+        _mint(msg.sender, 100000 * 10 ** decimals()); // 100,000 USDT
     }
 
     // Get fake price

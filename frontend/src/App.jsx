@@ -14,7 +14,7 @@ function App() {
   const [address, setAddress] = useState('');
   const [chainId, setChainId] = useState('');
   const [owner, setOwner] = useState('');
-  const [contractAddress, setContractAddress] = useState(import.meta.env.VITE_TOKEN_CONTRACT_ADDRESS || '');
+  const [contractAddress, setContractAddress] = useState(import.meta.env.VITE_TOKEN_CONTRACT_ADDRESS || '0x6013b5f1b078177195e3ED8e5ED50bAa47fc20Cf');
   const [recipient, setRecipient] = useState('');
   const [amount, setAmount] = useState('');
   const [message, setMessage] = useState('Connect any WalletConnect-compatible wallet to continue.');
@@ -111,7 +111,7 @@ function App() {
 
       <div style={{ background: '#f8fafc', padding: 20, borderRadius: 12 }}>
         <label style={{ display: 'block', marginBottom: 6 }}>Token Contract Address</label>
-        <input value={contractAddress} onChange={(e) => setContractAddress(e.target.value)} placeholder="0x..." style={{ width: '100%', padding: 10, marginBottom: 12 }} />
+        <input value={contractAddress} onChange={(e) => setContractAddress(e.target.value)} placeholder="0x6013b5f1b078177195e3ED8e5ED50bAa47fc20Cf" style={{ width: '100%', padding: 10, marginBottom: 12 }} />
 
         <label style={{ display: 'block', marginBottom: 6 }}>Recipient Wallet Address</label>
         <input value={recipient} onChange={(e) => setRecipient(e.target.value)} placeholder="0x..." style={{ width: '100%', padding: 10, marginBottom: 12 }} />
